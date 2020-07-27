@@ -11,3 +11,4 @@ export {
   export { ArrowLeft } from 'styled-icons/heroicons-solid';
   export { Chat } from 'styled-icons/heroicons-outline';
   export {SwitchHorizontal} from 'styled-icons/heroicons-outline';
+  export { EmojiHappy} from 'styled-icons/heroicons-solid';
