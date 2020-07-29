@@ -1,18 +1,29 @@
 import React from 'react';
-import { Container } from '../MenuBar/styles';
 
-// import { Container } from './styles';
+import { 
+  Container,
+  Item,
+  Title 
+} from './style';
+
 interface Props{
     title: string;
     elements: React.ReactNode[];
 
 
 }
-const List: React.FC <Props>= () => {
+const List: React.FC <Props>= ({
+  title,elements
+}) => {
+  
   return (
     <Container>
-        
-
+      <Item>
+        <Title>{title}</Title>
+      </Item>
+      {elements.map((element,index)=>(
+        <Item key={index}>{element}</Item>
+      ))}
     </Container>
 
 
